@@ -35,20 +35,7 @@ const SearchHeaderStyle = styled.div`
 const SearchHeader = ({ title }: PropsType) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
-  return (
-    <SearchHeaderStyle>
-      <div className="searchHeader-container">
-        <h1 className="searchHeader-title">{title}</h1>
-        <Input
-          onChange={() =>
-            console.log(inputRef && inputRef.current && inputRef.current.value)
-          }
-          ref={inputRef}
-          placeholder="Quem você quer ajuda hoje?"
-        />
-      </div>
-    </SearchHeaderStyle>
-  );
+  return <div></div>;
 };
 
 export default SearchHeader;
